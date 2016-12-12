@@ -28,7 +28,6 @@ def resize():
             f, e = os.path.splitext(path_to_write+item)
             imResize = im.resize((32,32), Image.ANTIALIAS)
             imResize.convert("RGB").save(f + 'resized.jpg')
-            #imResize.save(f + 'resized.jpg', 'JPEG', quality=100)
 	    
 
 def compare_images(imageA, imageB):	
